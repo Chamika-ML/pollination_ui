@@ -15,8 +15,11 @@ export default function Home() {
         var maxLat = parseFloat(document.getElementById('maxLat').value);
         var minLong = parseFloat(document.getElementById('minLong').value);
         var maxLong = parseFloat(document.getElementById('maxLong').value);
-        var url = `http://127.0.0.1:7777/pollination/?minLat=${minLat}&maxLat=${maxLat}&minLon=${minLong}&maxLon=${maxLong}`;
-        var url2 = `http://127.0.0.1:7777/timing/?minLat=${minLat}&maxLat=${maxLat}&minLon=${minLong}&maxLon=${maxLong}`;
+        var url = `http://127.0.0.1:5000/pollination/?minLat=${minLat}&maxLat=${maxLat}&minLon=${minLong}&maxLon=${maxLong}`;
+        var url2 = `http://127.0.0.1:5000/timing/?minLat=${minLat}&maxLat=${maxLat}&minLon=${minLong}&maxLon=${maxLong}`;
+        //when you come to the deploymet server update the bleow url and comment above two urls and use the below updated urls
+        //var url = `http://ec2-13-235-242-177.ap-south-1.compute.amazonaws.com:5000/pollination/?minLat=${minLat}&maxLat=${maxLat}&minLon=${minLong}&maxLon=${maxLong}`;
+        //var url2 = `http://ec2-13-235-242-177.ap-south-1.compute.amazonaws.com:5000/timing/?minLat=${minLat}&maxLat=${maxLat}&minLon=${minLong}&maxLon=${maxLong}`;
 
         try {
             //processing time astimateion
